@@ -1,0 +1,5 @@
+include(FindProtobuf)
+find_package(Protobuf REQUIRED)
+include_directories(${PROTOBUF_INCLUDE_DIR})
+PROTOBUF_GENERATE_CPP(PROTO_SRC PROTO_HEADER addressbook.proto)
+add_library(addressbook ${PROTO_HEADER} ${PROTO_SRC})

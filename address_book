@@ -1,0 +1,12 @@
+people {
+    name: "vigi"
+    id: 1
+    email: "vigi@baidu.com"
+    phones {
+        number: "11a11a"
+        type: HOME
+    }
+    phones {
+        number: "12b12b"
+    }
+}
